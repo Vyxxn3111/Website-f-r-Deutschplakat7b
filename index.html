@@ -1,63 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<style>
-body, h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Segoe UI', Calibri, sans-serif;
-}
-
-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-family: 'Segoe UI', Calibri, sans-serif;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#textbox {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  display: none;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website für Deutschplakat 7b</title>
 </head>
 <body>
-<h1>Hier gibt es eine Ausführlichere zusammenfassung der Scene.<br>
-   Als Tiuri sich gerade in einem Strauch versteckt, sieht er zwei Mönche an ihm vorbei laufen<br>
-   Diese heißen Bruder Martin und Bruder Laurentius.<br> Sie kommen aus einem Dorf, in dem eine Seuche ausgebrochen ist.<br></h1>
-
-<button onclick="toggleText()">Mehr...</button>
-
-<div id="textbox">
-  <p>Mönche im Mittelalter:<br>
-   <br>
-   Ein Mönch ist eine religiöse Person, die im Kloster lebt und sich selbst versorgt.<br>
-   In der Region gibt es 8 Klöster. In einem Kloster gibt es verschiedene Räume, wie zum Beispiel:<br> Schatzkammer Speisesaal Kirche.<br>
-   Das Leben im Kloster war für mittelalterliche Verhältnisse sehr gut.<br> Man musste jedoch etwas bezahlen, um ein Mönch werden zu können.<br>
-   Mönche Arbeiteten ca. 6 Stunden und beteten über 7 stunden.<br>
-   Als Arbeit ernteten sie im Klostergarten und Schrieben religiöse Texte ab, wie zum Beispiel die Bibel.<br></p>
-</div>
-
-<script>
-function toggleText() {
-  var textbox = document.getElementById("textbox");
-  if (textbox.style.display === "none") {
-    textbox.style.display = "block";
-  } else {
-    textbox.style.display = "none";
-  }
-}
-</script>
-
+    <h1>Monsieur de Pompadour und die Mönche</h1>
+    <button onclick="document.getElementById('textBox').style.display='block';">Mehr...</button>
+    <div id="textBox" style="display:none;">
+        <p>Die Mönche lebten in einem Kloster und führten ein bescheidenes Leben. Sie waren bekannt für ihre Weisheit und friedliche Art.</p>
+        <p>Monsieur de Pompadour war ein großer Beschützer der Künste und hatte Einfluss auf viele Künstler und Denker seiner Zeit.
+        </p>
+    </div>
 </body>
 </html>
