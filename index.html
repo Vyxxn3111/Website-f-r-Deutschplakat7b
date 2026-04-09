@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#textbox {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  display: none;
+}
+</style>
+</head>
 <body>
 <h1>Mönche im Mittelalter:<br>
   <br>
@@ -9,5 +35,23 @@
   Mönche Arbeiteten ca. 6 Stunden und beteten über 7 stunden.<br>
   Als Arbeit ernteten sie im Klostergarten und Schrieben religiöse Texte ab, wie zum Beispiel die Bibel.<br>
 </h1>
+
+<button onclick="toggleText()">Lustig</button>
+
+<div id="textbox">
+  <p>Hier kommt der lustige Text hin!</p>
+</div>
+
+<script>
+function toggleText() {
+  var textbox = document.getElementById("textbox");
+  if (textbox.style.display === "none") {
+    textbox.style.display = "block";
+  } else {
+    textbox.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
